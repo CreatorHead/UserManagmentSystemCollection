@@ -20,12 +20,12 @@ public class UserServicesImpl implements UserServices {
 
 	@Override
 	public Boolean updatePassword(Integer userId, String oldPassword, String newPassword) {
-		return updatePassword(userId, oldPassword, newPassword);
+		return db.updatePassword(userId, oldPassword, newPassword);
 	}
 
 	@Override
 	public Boolean deleteUser(Integer userId, String password) {
-		return deleteUser(userId, password);
+		return db.deleteUser(userId, password);
 	}
 
 }

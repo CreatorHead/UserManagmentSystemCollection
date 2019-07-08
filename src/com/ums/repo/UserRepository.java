@@ -5,7 +5,7 @@ import java.util.HashMap;
 import com.ums.beans.User;
 
 public class UserRepository {
-	public static HashMap<Integer, User> db = new HashMap<>();
+	public HashMap<Integer, User> db = new HashMap<>();
 	
 	public UserRepository(){
 		User user1 = new User();
