@@ -9,8 +9,8 @@ import com.ums.repo.UserRepository;
 
 public class RepoImpl implements UserDAO {
 	
-	
-	private HashMap<Integer, User> db = UserRepository.db;
+	UserRepository repo = new UserRepository();
+	private HashMap<Integer, User> db = repo.db;
 	
 	@Override
 	public Boolean createProfile(User user) {
